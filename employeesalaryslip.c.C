@@ -1,11 +1,13 @@
 #include<stdio.h>
 #include<conio.h>
-void main()
+#include<iostream>
+using namespace std;
+int main()
 {
    char name[25],post[35];
    int month,year;
    float bsalary,net,ptax,pfund,hra,loan,conveyance,sume,sumd;
-   clrscr();
+   system("CLS");
    printf("enter name of the employee and designation:");
    gets(name);
    gets(post);
@@ -25,7 +27,7 @@ void main()
    net=(sume-sumd);
 
    //actual generation of the slip
-   clrscr();
+   system("CLS");
    printf("\n\t\t\t\tGOOGLE PVT. Ltd");
    printf("\n\t========================================================");
    printf("\n\t\t\tSALARY SLIP FOR THE YEAR:%d",year);
@@ -33,9 +35,9 @@ void main()
    printf("\n\tEMPLOYEE NAME:%s",name);
    printf("\n\tDESIGNATION:%s",post);
    printf("\n\tmonth&year:%d\t%d",month,year);
-   printf("\n\t");
-   printf("\n\tEARNINGS:---------------------------------------DEDUCTIONS");
-   printf("\n\t");
+   printf("\-----------------------------------------------------------------");
+   printf("\n\tEARNINGS:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^DEDUCTIONS");
+   printf("\n\t---------------------------------------------------------------");
    printf("\n\tBASIC SALARY:%f\t\tPROVIDENT FUND:%f",bsalary,pfund);
    printf("\n\t_________________________________________________________");
    printf("\n\tHRA:%f \t\t\t PROFESSION TAX:%f",hra,ptax);
@@ -48,6 +50,6 @@ void main()
    printf("\n\t_________________________________________________________");
    printf("\n\tSIGNATURE OF THE EMPLOYEE: \t\t DIRECTOR:SUNDAR_PICHAI");
    printf("\n\t==========================================================");
-   getch();
+   system("PAUSE");
 
 }
