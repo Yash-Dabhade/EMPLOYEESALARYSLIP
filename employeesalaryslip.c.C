@@ -35,7 +35,7 @@ int main()
    printf("\n\tEMPLOYEE NAME:%s",name);
    printf("\n\tDESIGNATION:%s",post);
    printf("\n\tmonth&year:%d\t%d",month,year);
-   printf("\-----------------------------------------------------------------");
+   printf("\n-----------------------------------------------------------------");
    printf("\n\tEARNINGS:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^DEDUCTIONS");
    printf("\n\t---------------------------------------------------------------");
    printf("\n\tBASIC SALARY:%f\t\tPROVIDENT FUND:%f",bsalary,pfund);
